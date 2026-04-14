@@ -6,12 +6,6 @@ Aplicación web que utiliza inteligencia artificial para organizar tareas autom�
 
 ---
 
-## 🚀 Demo
-
-🎥 Vídeo (máx. 3 min): [AÑADE AQUÍ TU LINK DE LOOM]
-
----
-
 ## 💡 Problema
 
 Muchas veces tenemos múltiples tareas y no sabemos por dónde empezar.  
