@@ -1,12 +1,13 @@
 from flask import Flask, render_template, request, jsonify
 import os
 from dotenv import load_dotenv
-from openai import OpenAI
+import openai
 
 load_dotenv()
 
 app = Flask(__name__)
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 @app.route('/')
 def index():
@@ -39,13 +40,13 @@ def organizar():
     """
 
     try:
-        response = client.chat.completions.create(
+        response = openai.ChatCompletion.create(
             model="gpt-4o-mini",
             messages=[{"role": "user", "content": prompt}]
         )
 
         return jsonify({
-            "resultado": response.choices[0].message.content
+            "resultado": response['choices'][0]['message']['content']
         })
 
     except Exception as e:
