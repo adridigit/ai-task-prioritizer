@@ -1,0 +1,25 @@
+🧪 Prompt Log
+Prompt 1 — Priorización
+
+Tengo estas tareas: {tareas}. Ordénalas por prioridad.
+
+➡️ Problema: no priorizaba bien
+➡️ Solución: añadí urgencia, impacto y carga mental
+
+Prompt 2 — Formato JSON
+
+Devuelve el resultado en JSON con tarea, prioridad y explicación.
+
+➡️ Problema: salida difícil de usar
+➡️ Solución: estructura clara para frontend
+
+Prompt 3 — Consejo
+
+Añade un consejo general para organizar el día.
+
+➡️ Valor: mejora la utilidad real
+
+🔧 Mejoras futuras
+Persistencia de datos
+Login de usuario
+Integración con calendario
